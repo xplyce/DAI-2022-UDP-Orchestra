@@ -124,7 +124,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 |          | _Enter your response here..._                                                       |
 | Question | What is **npm**?                                                                    |
 |          | _Enter your response here..._                                                       |
-| Question | What is the `npm install` command?                                                  |
+| Question | What is the `npm install` command and what is the purpose of the `--save` flag?     |
 |          | _Enter your response here..._                                                       |
 | Question | How can we use the `https://www.npmjs.com/` web site?                               |
 |          | _Enter your response here..._                                                       |
@@ -141,15 +141,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 
 | #        | Topic                                                                               |
 | -------- | ----------------------------------------------------------------------------------- |
-| Question | How do we **define and build our own Docker image**?                                |
-|          | _Enter your response here..._                                                       |
-| Question | How can we use the `ENTRYPOINT` statement in our Dockerfile?                        |
-|          | _Enter your response here..._                                                       |
-| Question | After building our Docker image, how do we use it to **run containers**?            |
-|          | _Enter your response here..._                                                       |
-| Question | How do we get the list of all **running containers**?                               |
-|          | _Enter your response here..._                                                       |
-| Question | How do we **stop** and **kill** one running container?                              |
+| Question | What is the purpose of the `ENTRYPOINT` statement in our Dockerfile?                        |
 |          | _Enter your response here..._                                                       |
 | Question | How can we check that our running containers are effectively sending UDP datagrams? |
 |          | _Enter your response here..._                                                       |
@@ -162,8 +154,6 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 |          | _Enter your response here..._                                                                      |
 | Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**? |
 |          | _Enter your response here..._                                                                      |
-| Question | How can we use the `Day.js` npm module to help us with **date manipulations** and formatting?      |
-|          | _Enter your response here..._                                                                      |
 | Question | When and how do we **get rid of inactive players**?                                                |
 |          | _Enter your response here..._                                                                      |
 | Question | How do I implement a **simple TCP server** in Node.js?                                             |
@@ -173,7 +163,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 
 | #        | Topic                                                                                |
 | -------- | ------------------------------------------------------------------------------------ |
-| Question | How do we validate that the whole system works, once we have built our Docker image? |
+| Question |Send us the log file of the validation script to show that everything is ok           |
 |          | _Enter your response here..._                                                        |
 
 ## Constraints
