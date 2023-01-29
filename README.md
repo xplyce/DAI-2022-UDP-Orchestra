@@ -118,52 +118,52 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 
 ## Task 2: implement a "musician" Node.js application
 
-| #        | Topic                                                                               |
-| -------- | ----------------------------------------------------------------------------------- |
-| Question | In a JavaScript program, if we have an object, how can we **serialize it in JSON**? |
-|          | _Enter your response here..._                                                       |
-| Question | What is **npm**?                                                                    |
-|          | _Enter your response here..._                                                       |
-| Question | What is the `npm install` command and what is the purpose of the `--save` flag?     |
-|          | _Enter your response here..._                                                       |
-| Question | How can we use the `https://www.npmjs.com/` web site?                               |
-|          | _Enter your response here..._                                                       |
-| Question | In JavaScript, how can we **generate a UUID** compliant with RFC4122?               |
-|          | _Enter your response here..._                                                       |
-| Question | In Node.js, how can we execute a function on a **periodic** basis?                  |
-|          | _Enter your response here..._                                                       |
-| Question | In Node.js, how can we **emit UDP datagrams**?                                      |
-|          | _Enter your response here..._                                                       |
-| Question | In Node.js, how can we **access the command line arguments**?                       |
-|          | _Enter your response here..._                                                       |
+| #        | Topic                                                                                                                                                                                                                                  |
+| -------- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Question | In a JavaScript program, if we have an object, how can we **serialize it in JSON**?                                                                                                                                                    |
+|          | Grâce à JSON.stringify();                                                                                                                                                                                                              |
+| Question | What is **npm**?                                                                                                                                                                                                                       |
+|          | npm ets un gestionnaire de paquets et de dépendances pour les <br/>projet javascript.                                             <br/>                                                                                                |
+| Question | What is the `npm install` command?                                                                                                                                                                                                     |
+|          | C'est la commande qui permet d'installer un paquet et ses dépendances.                                                                                                                                                                 |
+| Question | How can we use the `https://www.npmjs.com/` web site?                                                                                                                                                                                  |
+|          | On l'utilise comme le site docker-hub car c'est un répertoire de paquet. On tape le nom du paquet que nous avons beosin et nous avons tout les informastions utiles à ce dernier. (la commande pour l'installer, les dépendances, etc) |
+| Question | In JavaScript, how can we **generate a UUID** compliant with RFC4122?                                                                                                                                                                  |
+|          | Il y un package nommé uuid sur `https://www.npmjs.com/package/uuid` qui nous permet de générer ce uuid.                                                                                                                                |
+| Question | In Node.js, how can we execute a function on a **periodic** basis?                                                                                                                                                                     |
+|          | Nous pouvons utilisé setInvertal() qui prend en agrument la fonction et un délai en milisecondes. Cette fonction permet de rappeler la fonction tout les miliseconde que nous avons entré dans le second argument.                     |
+| Question | In Node.js, how can we **emit UDP datagrams**?                                                                                                                                                                                         |
+|          | Nous pouvons utilisé le module dgram qui nous permet d'utiliser les datagrams socket et pour les émettre, nous utiliserons la commande socket.send()                                                                                   |
+| Question | In Node.js, how can we **access the command line arguments**?                                                                                                                                                                          |
+|          | En utilisant process.argv.                                                                                                                                                                                                             |
 
 ## Task 3: package the "musician" app in a Docker image
 
-| #        | Topic                                                                               |
-| -------- | ----------------------------------------------------------------------------------- |
-| Question | What is the purpose of the `ENTRYPOINT` statement in our Dockerfile?                        |
-|          | _Enter your response here..._                                                       |
-| Question | How can we check that our running containers are effectively sending UDP datagrams? |
-|          | _Enter your response here..._                                                       |
+| #        | Topic                                                                                             |
+| -------- |---------------------------------------------------------------------------------------------------|
+| Question | What is the purpose of the `ENTRYPOINT` statement in our Dockerfile?                              |
+|          | ENTRYPOINT nous permet d'executer une ligne de commande à chaque fois que le container est lancé. |
+| Question | How can we check that our running containers are effectively sending UDP datagrams?               |
+|          | En utilisant tcpdump par exemple.                                                                 |
 
 ## Task 4: implement an "auditor" Node.js application
 
-| #        | Topic                                                                                              |
-| -------- | -------------------------------------------------------------------------------------------------- |
-| Question | With Node.js, how can we listen for UDP datagrams in a multicast group?                            |
-|          | _Enter your response here..._                                                                      |
-| Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**? |
-|          | _Enter your response here..._                                                                      |
-| Question | When and how do we **get rid of inactive players**?                                                |
-|          | _Enter your response here..._                                                                      |
-| Question | How do I implement a **simple TCP server** in Node.js?                                             |
-|          | _Enter your response here..._                                                                      |
+| #        | Topic                                                                                                                                                                                                                               |
+| -------- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Question | With Node.js, how can we listen for UDP datagrams in a multicast group?                                                                                                                                                             |
+|          | Nous allons nous bind à un port (socket.bind) et nous allons rejoindre le groupe multicast avec la commande socket.addMembership().                                                                                                 |
+| Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**?                                                                                                                                  |
+|          | L'objet map contient des pair <clef,valeur> qui permettent de stocker une valeur et de la récuperer grâce à sa clef.                                                                                                                |
+| Question | When and how do we **get rid of inactive players**?                                                                                                                                                                                 |
+|          | Nous supprimons un musicien quand il est considérer comme inactif. Un musicien est considéré inactif quand aucun son n'est jouer de sa part pendant 5 secondes. Pour supprimer un musicien, nous utilisons setTimeout pour savoir s |
+| Question | How do I implement a **simple TCP server** in Node.js?                                                                                                                                                                              |
+|          | Nous utilisons le module net implémenter un serveur TCP.                                                                                                                                                                            |
 
 ## Task 5: package the "auditor" app in a Docker image
 
 | #        | Topic                                                                                |
 | -------- | ------------------------------------------------------------------------------------ |
-| Question |Send us the log file of the validation script to show that everything is ok           |
+| Question | How do we validate that the whole system works, once we have built our Docker image? |
 |          | _Enter your response here..._                                                        |
 
 ## Constraints
