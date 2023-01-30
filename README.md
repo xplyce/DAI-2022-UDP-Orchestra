@@ -164,7 +164,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | #        | Topic                                                                                |
 | -------- | ------------------------------------------------------------------------------------ |
 | Question | How do we validate that the whole system works, once we have built our Docker image? |
-|          | _Enter your response here..._                                                        |
+|          | En lançant le validate-windows.sh qui va supprimer tout les container actuel, build musicians et auditor et qui va ensuite executer 10 musicians et 1 auditor. Il va ensuite supprimer les musicians 1 par 1 jusqu'a 4 et va a chauque fois afficher le tabéeau contenant les musicians pour voir qu'il en manque 1. |
 
 ## Constraints
 
